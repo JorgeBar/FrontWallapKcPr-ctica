@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/spinner.css">
+    <link rel="stylesheet" href="/styles/create-product.css">
+    <title>Document</title>
+</head>
+<header>
+    <a class="BackHome" href="/"><button>Home</button></a> 
+
+</header>
+<body>
+    <section class="spinner hidden"></section>
+    <section id="notifications-container">
+    </section>
+    <form id="create-product-form">
+        <section class="spinner hidden">
+
+            <div class="lds-ring">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+
+        </section>
+
+        
+        <h1>Introduce los datos del producto</h1> 
+        <div>
+            <label for="name">Nombre</label>
+            <input
+                type="text" 
+                name="name"
+                id="name" 
+                required
+            ></input>
+        </div>
+        <div>
+            <label for="description">Descripción</label>
+            <input
+                type="text" 
+                name="description"
+                id="description" 
+                required
+            ></input>
+        </div>
+        <div>
+            <label for="price">Precio</label>
+            <input
+                type="number" 
+                name="price"
+                id="price" 
+                required
+            ></input>
+        </div>
+        <div>
+            <label for="type">Tipo de transacción</label>
+            <select id="type" name="type" required>
+
+                <option value="compra">Compra</option>
+                <option value="venta">Venta</option>
+
+            </select>
+        </div>
+        <div>
+            <label for="image">Adjunta imagen</label>
+            <input type="url" id="image" name="image" placeholder="URL de la imagen">
+        </div>
+
+        <button type="submit">Agregar producto</button>
+    </form>
+
+    <script type="module" src="/orquestadores/create-product.js"></script>
+</body>
+</html>

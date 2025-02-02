@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles/spinner.css">
+    <link rel="stylesheet" href="./Notifications/notifications-style.css">
+    <link rel="stylesheet" href="/styles/credentials.css">
+</head>
+<body>
+    <header>
+        <a class="BackHome" href="/"><button>Back home</button></a>
+    </header>
+
+    <section class="spinner hidden"></section>
+    <section id="notifications-container">
+    </section>
+    <form id="loginForm">
+        <label for="user-mail">Mail</label>
+        <input type="mail" id="user-mail" name="user-mail"required>
+        <br />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required minlength="4">
+        <br />
+      
+
+        <button type="submit">Login</button>
+    </form>
+    <script type="module" src="/orquestadores/login.js"></script>
+</body>
+</html>

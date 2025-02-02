@@ -1,0 +1,252 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("/assets/fullscreen.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #2e2e2e;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Header y navegación */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Botón Home */
+.BackHome button {
+    background-color: #333;
+    color: white;
+    border: 2px solid #070707;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.BackHome button:hover {
+    background-color: #c0ca66;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Contenedor de Productos */
+#products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 120px 20px 20px; /* Espacio para el header */
+}
+
+/* Tarjetas de Producto */
+.product-card {
+    background-color: rgba(245, 243, 247, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.product-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.product-card .product-description {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.product-card .product-price {
+    font-size: 18px;
+    color: #111110;
+    font-weight: bold;
+}
+
+.product-card .product-type {
+    font-size: 14px;
+    color: #777;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Estilo para formulario */
+form {
+    max-width: 400px;
+    margin: 150px auto;
+    padding: 30px;
+    background: rgba(245, 243, 247, 0.822);
+    border: 2px solid #141313;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4c4c4c;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #0e0d0d;
+    border-radius: 5px;
+    background-color: #faf6fb;
+    color: #2e2e2e;
+}
+
+input::placeholder {
+    color: #a8a8a8;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0e0d0d;
+    background-color: #f0eee7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #f5aa08;
+}
+
+button[type="submit"]:active {
+    background-color: #d08907;
+}
+
+/* Spinner (Cargando) */
+.spinner {
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.spinner.hidden {
+    display: none;
+}
+
+.spinner .lds-hourglass {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.spinner .lds-hourglass div {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #333;
+    animation: lds-hourglass 1.2s infinite ease-in-out;
+}
+
+.spinner .lds-hourglass div:nth-child(1) {
+    animation-delay: -0.4s;
+}
+
+.spinner .lds-hourglass div:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.spinner .lds-hourglass div:nth-child(3) {
+    animation-delay: 0s;
+}
+
+@keyframes lds-hourglass {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    .product-card h3 {
+        font-size: 16px;
+    }
+
+    .product-card .product-price {
+        font-size: 16px;
+    }
+
+    .product-card .product-type {
+        font-size: 12px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .action-buttons button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

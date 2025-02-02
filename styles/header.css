@@ -1,0 +1,31 @@
+header {
+    font-family: var(--main-font-family);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: var(--main-brand-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    
+    color: white;
+}
+
+header a {
+    width: 30%;
+    text-decoration: none;
+    list-style: none;
+    min-width: 6.3rem;
+    max-width: 12.5rem;
+}
+
+header button {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}

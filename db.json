@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "username": "jorge@hotmai.com",
+      "password": "$2b$10$hnvWSONHpoIaaROMfSvm/ucG3oUg0B8P8JkZ80efDz3LnbibkfSe.",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "name": "Movil ",
+      "description": "movil average",
+      "price": 500,
+      "type": "compra",
+      "image": "https://m.media-amazon.com/images/I/61TUHQ7L5VL._AC_SX679_.jpg",
+      "userId": 1,
+      "updatedAt": "2025-02-02T12:54:10.059Z",
+      "id": 1
+    },
+    {
+      "name": "Pantalla",
+      "description": "Pantalla average",
+      "price": 120,
+      "type": "venta",
+      "image": "https://m.media-amazon.com/images/I/817j1M2DAnL.__AC_SX300_SY300_QL70_ML2_.jpg",
+      "userId": 1,
+      "updatedAt": "2025-02-02T12:55:15.926Z",
+      "id": 2
+    },
+    {
+      "name": "Teclado",
+      "description": "Gamin",
+      "price": 100,
+      "type": "compra",
+      "image": "https://m.media-amazon.com/images/I/71wMIDCpqAL._AC_SX679_.jpg",
+      "userId": 1,
+      "updatedAt": "2025-02-02T12:57:07.555Z",
+      "id": 3
+    },
+    {
+      "name": "Raton",
+      "description": "raton gamin",
+      "price": 100,
+      "type": "venta",
+      "image": "https://m.media-amazon.com/images/I/513fpuHZBcL.__AC_SX300_SY300_QL70_ML2_.jpg",
+      "userId": 1,
+      "updatedAt": "2025-02-02T12:57:42.425Z",
+      "id": 4
+    }
+  ]
+}

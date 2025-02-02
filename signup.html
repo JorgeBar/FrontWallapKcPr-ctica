@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/spinner.css">
+    <link rel="stylesheet" href="/styles/credentials.css">
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <a class="BackHome" href="/"><button>Back home</button></a>
+      </header>
+    <section class="spinner hidden"></section>
+    <section id="notifications-container">
+    </section>
+    <form>
+        <h1>Registrar</h1>
+        <label for="user-mail">Mail</label>
+        <input type="mail" id="user-mail" name="user-mail"required>
+        <br />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required minlength="4">
+        <br />
+        <label for="password-confirm">Confirm Password</label>
+        <input type="password" id="password-confirm" name="password" required minlength="4">
+
+        <button type="submit">Crear usuario</button>
+    </form>
+    <script type="module" src="/orquestadores/signup.js"></script>
+</body>
+</html>
