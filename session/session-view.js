@@ -8,7 +8,7 @@ export function buildAuthorizedSession(){
 
 export function buildUnauthorizedSession(){
     return `
-    <a href="/login.html">Login</a>
-    <a href="/signup.html">Signup</a>
+    <button><a href="/login.html">Login</a></button>
+    <button><a href="/signup.html">Signup</a></button>
      `
 }

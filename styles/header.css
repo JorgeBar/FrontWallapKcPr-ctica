@@ -1,26 +1,55 @@
+/* Reset y configuraciones básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("/assets/fullscreen.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos del header */
 header {
-    font-family: var(--main-font-family);
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background-color: var(--main-brand-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.8rem;
-    
+    flex-wrap: nowrap; /* Evita que los elementos se apilen */
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente opcional */
     color: white;
+    width: 100%;
+    position: relative;
 }
 
+/* Evitar margen no deseado en h1 */
+header h1 {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+/* Estilos de los enlaces */
 header a {
-    width: 30%;
     text-decoration: none;
-    list-style: none;
-    min-width: 6.3rem;
-    max-width: 12.5rem;
+    color: white;
+    font-weight: bold;
 }
 
-header button {
+/* Contenedor de sesión */
+#session {
+    display: flex;
+    gap: 1rem; /* Espaciado entre botones */
+}
+
+/* Botones */
+#session button {
     background-color: transparent;
     border: 1px solid white;
     padding: 0.5rem 1rem;
@@ -28,4 +57,10 @@ header button {
     cursor: pointer;
     font-size: 1rem;
     border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#session button:hover {
+    background-color: rgb(211, 15, 15);
+    color: black;
 }
